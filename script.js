@@ -5,6 +5,8 @@ const hamburgerMenu = document.querySelector(".hamburger");
 // ハンバーガーメニューがクリックされた時に表示されるメニュー画面の要素
 const navi = document.querySelector(".hamburger_navi");
 
+const overlay = document.querySelector(".overlay");
+
 // ハンバーガーメニュー内の各セクションの要素
 // const hamburgerMenuSections = document.querySelectorAll(".hamburger-menu-section");
 
@@ -14,7 +16,7 @@ hamburgerMenu.addEventListener("click", function () {
   // activeクラスが存在する場合は削除、存在しない場合を追加する処理を自動で行ってくれる
   hamburgerMenu.classList.toggle("active");
   navi.classList.toggle('active');
-  document.body.classList.toggle("overlay")
+  overlay.classList.toggle("active");
 });
 
 // // ハンバーガーメニュー内の各セクションをクリックした際、開いていたハンバーガーメニューを閉じる
