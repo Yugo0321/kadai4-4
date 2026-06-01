@@ -1,11 +1,12 @@
 @charset "utf-8";
 
-.container{
+.container {
   display: flex;
   /* justify-content: space-between; */
   margin: 20px 30px;
 }
-.hamburger{
+
+.hamburger {
   width: 70px;
   height: 70px;
   margin-left: auto;
@@ -15,7 +16,8 @@
 
   opacity: 1;
 }
-.hamburger span{
+
+.hamburger span {
   width: 40px;
   height: 2px;
   background: black;
@@ -25,32 +27,40 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.hamburger span:nth-child(1){
+
+.hamburger span:nth-child(1) {
   top: 22px;
 }
-.hamburger span:nth-child(2){
+
+.hamburger span:nth-child(2) {
   top: 36px;
 }
-.hamburger span:nth-child(3){
+
+.hamburger span:nth-child(3) {
   top: 50px;
 }
+
 /* ハンバーガーメニューのactiveゾーン*/
 .hamburger.active span:nth-child(1) {
   top: 34px;
   transform: translateX(-50%) rotate(-405deg);
 }
+
 .hamburger.active span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.active span:nth-child(3) {
   top: 34px;
   transform: translateX(-50%) rotate(405deg);
 }
-li a{
+
+li a {
   text-decoration: none;
   color: #fff;
 }
-.hamburger_navi{
+
+.hamburger_navi {
   width: 30%;
   height: 100vh;
   background-color: #121212;
@@ -61,23 +71,28 @@ li a{
   /* z-index: 20; */
   opacity: 0;
   /* text-align: center; */
-  transition: opacity 0.8s ease, 
-  visibility 0.8s ease;
+  transition: opacity 0.8s ease,
+    visibility 0.8s ease;
   visibility: hidden;
+  padding: 50px 0 0 0;
 }
+
 .hamburger_navi.active {
   opacity: 1;
   visibility: visible;
   z-index: 30;
 }
-.hamburger.active span{
+
+.hamburger.active span {
   background-color: white;
   /* z-index: 20; */
 }
-li{
+
+li {
   list-style: none;
 }
-.overlay{
+
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -85,7 +100,7 @@ li{
   width: 100%;
   height: 100vh;
 
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
 
   opacity: 0;
   visibility: hidden;
@@ -93,14 +108,15 @@ li{
   transition: 0.5s;
 
   z-index: 15;
-} 
+}
 
-.overlay.active{
+.overlay.active {
   opacity: 1;
   visibility: visible;
-} 
+}
+
 /* 以下も使用できるが、変化する際に秒数の指定などはでききない */
- /* .overlay.active{
+/* .overlay.active{
   position: fixed;
   top: 0;
   left: 0;
@@ -112,46 +128,56 @@ li{
 
   z-index: 15;
 } */
-.hamburger_menu1 li{
+.hamburger_menu1 li {
   margin: 20px 0;
 }
-.hamburger_menu2{
-margin-top: 50px;
+
+.hamburger_menu2 {
+  margin-top: 50px;
 }
-.hamburger_menu2 li{
+
+.hamburger_menu2 li {
   margin-bottom: 10px;
 }
 
 /* ここまで */
-main video{
+main video {
   height: 100vh;
   width: 100%;
   object-fit: cover;
   background-color: aquamarine;
 }
-h1{
+
+h1 {
   text-align: center;
   margin-top: 100px;
 }
-.pick-pic{
+
+.pick-pic {
   height: auto;
   width: 100%;
-
 }
+.feature-area{
+  width: 100%;
+}
+
 .feature_up,
 .feature_middle,
-.feature_down{
+.feature_down {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-main div div img{
+
+main div div img {
   display: block;
   margin-top: 20px;
 }
-.date{
+
+.date {
   text-align: end;
 }
+
 .feature1,
 .feature2,
 .feature3,
@@ -160,9 +186,10 @@ main div div img{
 .feature6,
 .feature7,
 .feature8,
-.feature9{
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+.feature9 {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
+
 .category1,
 .category2,
 .category3,
@@ -171,50 +198,56 @@ main div div img{
 .category6,
 .category7,
 .category8,
-.category9{
+.category9 {
   height: 190px;
   padding: 0 20px;
 }
-footer h1{
+
+footer h1 {
   margin-top: 0;
 }
-.fadein{
+
+.fadein {
   opacity: 0;
   transform: translateY(50px);
   transition: all 1s;
 }
 
-.fadein.show{
+.fadein.show {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* フッダー */
-footer{
+footer {
   background-color: black;
   color: aliceblue;
   padding: 70px 10px;
   margin-top: 50px;
 }
-.contact_detail{
+
+.contact_detail {
   display: flex;
   max-width: 1300px;
   justify-content: space-between;
   margin: 0 auto;
   /* gap: 90px; */
 }
-form{
+
+form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 45%;
 }
-input{
+
+input {
   height: 50px;
   /* width: 100%; */
   max-width: 550px;
 }
-.send_btn{
+
+.send_btn {
   height: 50px;
   width: 200px;
   background-color: #121212;
@@ -222,24 +255,30 @@ input{
   color: aliceblue;
 }
 
-.send_btn:hover{
+.send_btn:hover {
   opacity: 0.8;
 }
 
-@media(max-width: 768px){
+hr {
+  margin-right: 20px;
+}
+
+@media(max-width: 768px) {
 
   .feature_up,
   .feature_middle,
-  .feature_down{
+  .feature_down {
     flex-direction: column;
     align-items: center;
   }
-  .contact_detail{
+
+  .contact_detail {
     flex-direction: column;
     align-items: start;
     width: 100%;
   }
-  form{
+
+  form {
     width: 100%;
   }
 
