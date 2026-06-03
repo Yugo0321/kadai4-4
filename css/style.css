@@ -172,6 +172,8 @@ h1 {
 main div div img {
   display: block;
   margin-top: 20px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .date {
