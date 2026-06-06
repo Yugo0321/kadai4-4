@@ -74,7 +74,7 @@ li a {
   transition: opacity 0.8s ease,
     visibility 0.8s ease;
   visibility: hidden;
-  padding: 50px 0 0 0;
+  padding: 50px 0 0 20px;
 }
 
 .hamburger_navi.active {
@@ -180,27 +180,11 @@ main div div img {
   text-align: end;
 }
 
-.feature1,
-.feature2,
-.feature3,
-.feature4,
-.feature5,
-.feature6,
-.feature7,
-.feature8,
-.feature9 {
+.feature-card{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-.category1,
-.category2,
-.category3,
-.category4,
-.category5,
-.category6,
-.category7,
-.category8,
-.category9 {
+.category{
   height: 190px;
   padding: 0 20px;
 }
