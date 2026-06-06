@@ -145,7 +145,6 @@ main video {
   height: 100vh;
   width: 100%;
   object-fit: cover;
-  background-color: aquamarine;
 }
 
 h1 {
