@@ -283,15 +283,17 @@ hr {
     align-items: start;
     width: 100%;
     gap: 50px;
+
+    padding:0 1vw;
   }
 
   .contact_detail div{
     width: 100%;
+    margin: 0;
   }
-
-  form {
+  .form{
     width: 100%;
-    margin-left: 5vw;
+    margin: 0;
   }
 
 }
